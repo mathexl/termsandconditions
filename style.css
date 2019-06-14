@@ -178,11 +178,12 @@ section[name="main"] > .about > h1{
     color: rgba(250,74,132,1);
     width:100%;
     text-align: left;
+    font-size:26px;
 }
 
 section[name="main"] > .about > p{
   color: rgba(39, 4, 80, 1);
-  font-weight:600;
+  font-weight:300;
   opacity:.7;
   width:100%;
   text-align: justify;
@@ -194,9 +195,11 @@ section[name="main"] > .about > .signup{
   margin-top:40px;
   background-color: rgba(250,74,132,1);
   color:white;
-  padding:14px 30px;
+  padding:7px 20px;
   cursor:pointer;
-  border-radius:40px;
+  font-weight:600;
+  text-decoration: none;
+  border-radius:5px;
 }
 
 section[name="main"] > .about > .signup:hover{
@@ -274,5 +277,9 @@ section[name="main"] > .about > .x{
 
     box-sizing: border-box;
 
+  }
+
+  section[name="main"] > .about > h1{
+    font-size:20px;
   }
 }
