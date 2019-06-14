@@ -1,0 +1,198 @@
+body {
+  margin:0px;
+  height:0px;
+}
+
+@font-face {
+    font-family: 'Greycliff';
+    src: url("./fonts/Greycliff-CF-Regular.otf") format("opentype"),
+         url("./fonts/GreycliffCF-Regular.woff") format("woff")
+    ;
+}
+
+@font-face {
+    font-weight: bold;
+    font-family: 'Greycliff';
+    src: url("./fonts/Greycliff-CF-Heavy.otf") format("opentype"),
+    url("./fonts/GreycliffCF-Heavy.woff") format("woff")
+    ;
+}
+
+section[name="main"]{
+  background-image:url('bg.png');
+  background-size:cover;
+  background-position: center;
+  box-sizing: border-box;
+  width:100%;
+  font-family: 'Greycliff';
+  height:100vh;
+  position: relative;
+  display: inline-block;
+}
+
+section[name="main"] > h1{
+  margin-left:10vw;
+  margin-top:20vh;
+  font-size:66px;
+  width:38vw;
+  color:white;
+  font-weight:600;
+  display: inline-block;
+  float:left;
+  clear:both;
+  line-height: 60px;
+  padding-bottom:20px;
+    margin-bottom: 13px;
+  border-bottom:4px rgba(116, 212, 240) solid;
+}
+
+
+section[name="main"] > h1 > span{
+  color: rgba(250,74,132,1);
+  margin-left:-2px;
+}
+
+section[name="main"] > h2{
+  margin-left:10vw;
+  margin-top:0vh;
+  float:left;
+  clear:both;
+  font-size:36px;
+  color: rgba(250,74,132,1);
+
+  width:38vw;
+  margin-bottom:2vh;
+  font-weight:600;
+  display: inline-block;
+
+}
+
+section[name="main"] > h3{
+  margin-left:10vw;
+  margin-top:2vh;
+  float:left;
+  clear:both;
+  font-size:22px;
+  color: white;
+  width:38vw;
+  font-weight:300;
+  display: inline-block;
+
+}
+
+section[name="main"] > .cta{
+  margin-left:10vw;
+  margin-top:2vh;
+  float:left;
+  clear:both;
+  font-size:14px;
+  color: white;
+  width:38vw;
+  font-weight:300;
+  display: inline-block;
+
+}
+
+
+section[name="main"] > .cta > .button{
+  background-color: rgba(250,74,132,1);
+  color:white;
+  padding:8px;
+  border-radius:5px;
+  display: inline-block;
+  margin-left:10px;
+  cursor: pointer;
+  font-weight:600;
+}
+
+section[name="main"] > .cta > .button:hover{
+  opacity:.7;
+}
+
+
+section[name="main"] > .buttons{
+  left:10vw;
+  bottom:2vh;
+  position: absolute;
+  width:38vw;
+  display: inline-block;
+}
+
+section[name="main"] > .buttons > a{
+  display: inline-block;
+  float:left;
+  margin-right:30px;
+}
+
+section[name="main"] > .buttons > a > img{
+  display: inline-block;
+  float:left;
+  height:40px
+}
+
+section[name="main"] > .greyCover{
+
+  display: inline-block;
+  position: fixed;
+  z-index: 3;
+  background-color:rgba(0,0,0,.7);
+  width:100%;
+  height:100vh;
+  top:0px;
+  left:0px;
+}
+
+
+section[name="main"] > .about{
+
+  display: inline-block;
+  position: fixed;
+  z-index: 4;
+  background-color:white;
+  width:calc(100% - 600px);
+  height:calc(100vh - 140px);
+  top:70px;
+  left:300px;
+  border-radius:50px;
+  text-align: center;
+  padding:40px;
+  box-sizing: border-box;
+
+}
+
+section[name="main"] > .about > h1{
+    color: rgba(250,74,132,1);
+    width:100%;
+    text-align: left;
+}
+
+section[name="main"] > .about > p{
+  color: rgba(39, 4, 80, 1);
+  font-weight:600;
+  opacity:.7;
+  width:100%;
+  text-align: justify;
+  display: inline-block;
+}
+
+section[name="main"] > .about > .signup{
+  display: inline-block;
+  margin-top:40px;
+  background-color: rgba(250,74,132,1);
+  color:white;
+  padding:14px 30px;
+  cursor:pointer;
+  border-radius:40px;
+}
+
+section[name="main"] > .about > .signup:hover{
+  opacity:.7;
+}
+
+section[name="main"] > .about > .x{
+  position: absolute;
+  top:29px;
+  cursor:pointer;
+  right:35px;
+  height:24px;
+}

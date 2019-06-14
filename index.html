@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Terms & Conditions</title>
+<link href="./style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="./favicon.png">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+  <section name="main" id="main">
+
+    <!-- MAIN STUFF -->
+    <h1>TERMS <span>&</span><br>CONDITIONS</h1>
+    <h2>PODCAST</h2>
+    <h3>A podcast where a guy reads the overdraft
+      terms and conditions from big banks.</h3>
+    <div class="cta">
+      CREATED BY CURRENT
+      <div class="button" v-on:click="showAbout = true">FIND OUT WHY</div>
+    </div>
+
+    <!-- PODCAST BUTTONS -->
+    <div class="buttons">
+      <a href="https://open.spotify.com/show/1Uc91xVr9DIoehkwGYHNml">
+        <img src="./images/spotify.png">
+      </a>
+    </div>
+
+
+    <!-- ABOUT -->
+    <div class="greyCover" v-if="showAbout" v-on:click="showAbout = false"></div>
+    <div class="about"  v-if="showAbout">
+      <img src="./images/x.png" class="x" v-on:click="showAbout = false">
+      <h1>SO… WHY ARE WE DOING THIS</h1>
+      <p>
+        Everyday, Big Banks make close to a $100 million in overdraft fees. Next year, Big Banks are estimated to rake in $40 billion in overdraft fees, and that's possible because 1 in 4 Americans are being hit with these fees. The major issue is that almost nobody actually reads the terms and conditions of these overdrafts from big banks, and have no clue what they are actually agreeing to. We at Current know that! We also know that you listen to podcasts which is why we launched The Terms and Conditions Podcast to help everyday Americans better understand what they are agreeing to.
+        <br><br>
+        Oh, and we should mention that at Current we do not charge ANY overdraft fees. So perhaps it's time to dump your bank and switch to Current.
+      </p>
+      <a class="signup">Sign Up</a>
+    </div>
+    <!-- END OF ABOUT -->
+
+
+  </section>
+  <script>
+    var app = new Vue({
+      el: '#main',
+      data: {
+        showAbout: false
+      }
+    });
+  </script>
+</body>
+
+</html>
