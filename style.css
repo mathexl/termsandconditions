@@ -215,13 +215,13 @@ section[name="main"] > .about > .x{
 
   body {
     background-image:url('bg_mobile.png');
-    background-position: top;
+    background-position: 0px -5vh;
   }
 
 
   section[name="main"]{
 
-    padding-top:40vw;
+    padding-top:5vh;
     height: auto;
     padding-bottom:20vw;
   }
