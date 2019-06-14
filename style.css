@@ -6,6 +6,8 @@ body {
   height: 100vh;
   min-height: 100%;
   background-image:url('bg.png');
+  background-repeat: none;
+  background-color:rgba(39, 4, 80, 1);
   background-size:cover;
   background-position: center;
 }
@@ -215,6 +217,8 @@ section[name="main"] > .about > .x{
     background-image:url('bg_mobile.png');
     background-position: top;
   }
+
+
   section[name="main"]{
 
     padding-top:40vw;
@@ -226,6 +230,7 @@ section[name="main"] > .about > .x{
     margin-left:10vw;
     margin-top:20vh;
     width:80vw;
+    font-size:46px;
   }
 
   section[name="main"] > h2{
